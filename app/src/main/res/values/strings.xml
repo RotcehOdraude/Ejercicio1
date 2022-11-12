@@ -4,4 +4,13 @@
     <string name="hnt_nombre">Nombre</string>
     <string name="hnt_correo">Correo electrónico</string>
     <string name="hnt_actualizar">Mi signo</string>
+    <string name="iv_zodiacal_content_description">Zodiacal</string>
+    <string name="iv_chino_content_description">Chino</string>
+    <string name="tv_nombre">Nombre</string>
+    <string name="tv_chinoHoroscopo">Chino</string>
+    <string name="tv_zodiacalSigno">Zodiacal</string>
+    <string name="tv_edad">Edad</string>
+    <string name="tv_fechaNacimiento">Fecha de nacimiento</string>
+    <string name="tv_numeroCuenta">Número de cuenta</string>
+    <string name="tv_correoElectronico">Correo electrónico</string>
 </resources>
