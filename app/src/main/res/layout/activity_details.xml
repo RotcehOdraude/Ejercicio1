@@ -52,7 +52,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/tv_chinoHoroscopo"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="@+id/ivSignoChino"
         app:layout_constraintStart_toStartOf="@+id/ivSignoChino"
         app:layout_constraintTop_toBottomOf="@+id/ivSignoChino" />
@@ -64,7 +64,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/tv_zodiacalSigno"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="@+id/ivSignoZodiacal"
         app:layout_constraintStart_toStartOf="@+id/ivSignoZodiacal"
         app:layout_constraintTop_toBottomOf="@+id/ivSignoZodiacal" />
@@ -202,6 +202,7 @@
         android:layout_height="wrap_content"
         android:text="@string/tv_edad"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline6" />
@@ -212,6 +213,7 @@
         android:layout_height="wrap_content"
         android:text="@string/tv_fechaNacimiento"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline7" />
@@ -222,6 +224,7 @@
         android:layout_height="wrap_content"
         android:text="@string/tv_numeroCuenta"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline9" />
@@ -232,6 +235,7 @@
         android:layout_height="wrap_content"
         android:text="@string/tv_correoElectronico"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline10" />
