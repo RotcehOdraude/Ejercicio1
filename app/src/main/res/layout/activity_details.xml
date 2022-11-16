@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivSignoChino"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:contentDescription="@string/iv_chino_content_description"
@@ -33,14 +33,16 @@
         tools:ignore="ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ivSignoZodiacal"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:contentDescription="@string/iv_zodiacal_content_description"
         app:layout_constraintBottom_toTopOf="@+id/guideline13"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/guideline15"
         app:layout_constraintTop_toTopOf="@+id/guideline12"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_zodiaco" />
 
     <TextView
@@ -51,9 +53,9 @@
         android:text="@string/tv_chinoHoroscopo"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintEnd_toEndOf="@+id/ivSignoChino"
+        app:layout_constraintStart_toStartOf="@+id/ivSignoChino"
+        app:layout_constraintTop_toBottomOf="@+id/ivSignoChino" />
 
     <TextView
         android:id="@+id/tvZodiacalSigno"
@@ -63,9 +65,9 @@
         android:text="@string/tv_zodiacalSigno"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintEnd_toEndOf="@+id/ivSignoZodiacal"
+        app:layout_constraintStart_toStartOf="@+id/ivSignoZodiacal"
+        app:layout_constraintTop_toBottomOf="@+id/ivSignoZodiacal" />
 
     <TextView
         android:id="@+id/tvEdad"
