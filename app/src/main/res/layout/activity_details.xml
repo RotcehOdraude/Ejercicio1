@@ -33,6 +33,21 @@
         tools:ignore="ImageContrastCheck" />
 
     <ImageView
+        android:id="@+id/ivCarrera"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="@+id/guideline12"
+        app:srcCompat="@drawable/compu"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
         android:id="@+id/ivSignoZodiacal"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -52,10 +67,22 @@
         android:layout_marginTop="8dp"
         android:text="@string/tv_chinoHoroscopo"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="@+id/ivSignoChino"
         app:layout_constraintStart_toStartOf="@+id/ivSignoChino"
         app:layout_constraintTop_toBottomOf="@+id/ivSignoChino" />
+
+    <TextView
+        android:id="@+id/tvCarrera"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_carrera"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/guideline15"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toBottomOf="@+id/guideline13" />
 
     <TextView
         android:id="@+id/tvZodiacalSigno"
@@ -64,7 +91,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/tv_zodiacalSigno"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="@+id/ivSignoZodiacal"
         app:layout_constraintStart_toStartOf="@+id/ivSignoZodiacal"
         app:layout_constraintTop_toBottomOf="@+id/ivSignoZodiacal" />
@@ -259,13 +286,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent=".45" />
+        app:layout_constraintGuide_percent="0.35" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent=".55" />
+        app:layout_constraintGuide_percent="0.65" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

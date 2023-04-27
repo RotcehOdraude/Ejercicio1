@@ -15,4 +15,5 @@
     <string name="tv_correoElectronico">Correo electrónico</string>
     <string name="hnt_fechaNacimiento">Fecha de nacimiento (dd/MM/yyyy)</string>
     <string name="autor">Héctor Cabello</string>
+    <string name="tv_carrera">Carrera</string>
 </resources>

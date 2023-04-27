@@ -44,6 +44,8 @@ class DetailsActivity : AppCompatActivity() {
         //TODO
         setSignoZodiacal(dia,mes)
 
+        setCarrera()
+
         with(binding){
             tvNombre.text = nombre
             tvEdad.text = edad
@@ -178,6 +180,11 @@ class DetailsActivity : AppCompatActivity() {
             }
             else -> "Input invalido"
         }
+    }
+
+    private fun setCarrera() {
+        binding.ivCarrera.setImageResource(R.drawable.carrera_civil)
+        binding.tvCarrera.setText("Ing. Civil")
     }
 
     private fun obtener_distancia_desde_origen(anio_de_nacimiento:Int,origen:Int): Int {
