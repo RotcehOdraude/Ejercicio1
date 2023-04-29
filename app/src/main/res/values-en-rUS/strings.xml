@@ -2,9 +2,17 @@
 <resources>
     <string name="app_name">Constellations</string>
     <string name="hnt_numero_cuenta">Student ID</string>
-    <string name="hnt_nombre">Name</string>
+    <string name="hnt_nombre">Names</string>
     <string name="hnt_correo">Email</string>
     <string name="hnt_actualizar">Mi sign</string>
+    <string name="iv_zodiacal_content_description">Zodiacal</string>
+    <string name="iv_chino_content_description">Chinese</string>
+    <string name="tv_edad">Age</string>
+    <string name="tv_fechaNacimiento">Birthday</string>
+    <string name="tv_numeroCuenta">Student ID</string>
+    <string name="tv_correoElectronico">Email</string>
+    <string name="hnt_fechaNacimiento">Birthday</string>
     <string name="autor">Héctor Cabello</string>
-    <string name="tv_carrera">Carrera</string>
+    <string name="hnt_apellidos">Last name</string>
+    <string name="et_error_msg">Cannot be empty</string>
 </resources>

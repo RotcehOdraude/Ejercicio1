@@ -1,19 +1,31 @@
 <resources>
     <string name="app_name">Constelaciones</string>
     <string name="hnt_numero_cuenta">Número de cuenta</string>
-    <string name="hnt_nombre">Nombre</string>
+    <string name="hnt_nombre">Nombres</string>
     <string name="hnt_correo">Correo electrónico</string>
     <string name="hnt_actualizar">Mi signo</string>
     <string name="iv_zodiacal_content_description">Zodiacal</string>
     <string name="iv_chino_content_description">Chino</string>
-    <string name="tv_nombre">Nombre</string>
-    <string name="tv_chinoHoroscopo">Chino</string>
-    <string name="tv_zodiacalSigno">Zodiacal</string>
+    <string name="tv_nombre" translatable="false">Nombres</string>
+    <string name="tv_chinoHoroscopo" translatable="false">Chino</string>
+    <string name="tv_zodiacalSigno" translatable="false">Zodiacal</string>
     <string name="tv_edad">Edad</string>
     <string name="tv_fechaNacimiento">Fecha de nacimiento</string>
     <string name="tv_numeroCuenta">Número de cuenta</string>
     <string name="tv_correoElectronico">Correo electrónico</string>
     <string name="hnt_fechaNacimiento">Fecha de nacimiento (dd/MM/yyyy)</string>
     <string name="autor">Héctor Cabello</string>
-    <string name="tv_carrera">Carrera</string>
+    <string name="tv_carrera" translatable="false">Carrera</string>
+    <string name="hnt_apellidos">Apellidos</string>
+    <string-array name="carreras">
+        <item>Computacion</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="et_error_msg">No puede quedar vacio</string>
 </resources>
