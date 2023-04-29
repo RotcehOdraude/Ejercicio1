@@ -171,7 +171,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Spinner
-        android:id="@+id/spinnercarreras"
+        android:id="@+id/spinnerCarreras"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"

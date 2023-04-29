@@ -14,5 +14,16 @@
     <string name="hnt_fechaNacimiento">Birthday</string>
     <string name="autor">Héctor Cabello</string>
     <string name="hnt_apellidos">Last name</string>
-    <string name="et_error_msg">Cannot be empty</string>
+    <string name="et_error_msg">Cannot remain empty</string>
+    <string-array name="carreras">
+        <item>SELECT AN OPTION</item>
+        <item>Computación</item>
+        <item>Electrica Electronica</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="spinner_error_msg">Select a career</string>
 </resources>
