@@ -19,14 +19,23 @@
     <string name="hnt_apellidos">Apellidos</string>
     <string-array name="carreras">
         <item>SELECIONA UNA OPCIÓN</item>
-        <item>Aeroespacial</item>
-        <item>Electrica Electronica</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+        <item>Ing. Ambiental</item>
+        <item>Ing. Biomedica</item>
+        <item>Ing. Civil</item>
+        <item>Ing. Computación</item>
+        <item>Ing. Eléctrica</item>
+        <item>Ing. Espacial</item>
+        <item>Ing. Geofísica</item>
+        <item>Ing. Geológica</item>
+        <item>Ing. Geomática</item>
+        <item>Ing. Industrial</item>
+        <item>Ing. Mecanica</item>
+        <item>Ing. Mecatronica</item>
+        <item>Ing. Minas</item>
+        <item>Ing. Petrolera</item>
+        <item>Ing. Telecom</item>
     </string-array>
+
     <string name="et_error_msg">No puede quedar vacío</string>
     <string name="spinner_error_msg">Selecciona una carrera</string>
 </resources>

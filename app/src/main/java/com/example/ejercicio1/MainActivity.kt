@@ -9,9 +9,10 @@ import android.util.Patterns
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Spinner
 import android.widget.Toast
 import com.example.ejercicio1.databinding.ActivityMainBinding
+import java.text.SimpleDateFormat
+import java.util.Date
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -52,13 +53,30 @@ class MainActivity : AppCompatActivity() {
             }
     }
 
-    private fun isValidEmail(mail: CharSequence) = (!TextUtils.isEmpty(mail) && Patterns.EMAIL_ADDRESS.matcher(mail).matches())
+    private fun isValidEmail(mail: CharSequence) =
+        (!TextUtils.isEmpty(mail) && Patterns.EMAIL_ADDRESS.matcher(mail).matches())
+
+    private fun isValidDate(fecha: String): Boolean {
+        val formato = SimpleDateFormat("dd/MM/yyyy")
+        formato.isLenient = false
+
+        try {
+            val fechaIngresada = formato.parse(fecha)
+            val fechaActual = Date()
+            if (fechaIngresada.after(fechaActual)) {
+                return false
+            }
+            return true
+        } catch (e: Exception) {
+            return false
+        }
+    }
 
     fun click(view: View) {
         var bandera = true
         fun alert(msg: String, display: Boolean = false) {
             bandera = false
-            if(display) {
+            if (display) {
                 Toast.makeText(
                     this@MainActivity,
                     msg,
@@ -77,9 +95,9 @@ class MainActivity : AppCompatActivity() {
                 tietApellidos.error = error_msg
                 alert("")
             }
-            if (tietNacimiento.text?.isEmpty() == true) {
+            if (tietNacimiento.text?.isEmpty() == true || !isValidDate(tietNacimiento.text.toString())) {
                 tietNacimiento.error = error_msg
-                alert("")
+                alert("Fecha invalida", true)
             }
             if (tietNumCuenta.text?.isEmpty() == true) {
                 tietNumCuenta.error = error_msg
@@ -87,19 +105,21 @@ class MainActivity : AppCompatActivity() {
             }
             if (tietCorreo.text?.isEmpty() == true || !isValidEmail(tietCorreo.text.toString())) {
                 tietCorreo.error = error_msg
-                alert("Correo invalido",true)
+                alert("Correo invalido", true)
             }
             if (spinnerPosition == 0) {
-                alert(getString(R.string.spinner_error_msg),true)
+                alert(getString(R.string.spinner_error_msg), true)
             }
 
             if (bandera == true) {
                 //Toast.makeText(this@MainActivity,"Gracias",Toast.LENGTH_SHORT).show()
                 parametros.apply {
                     putString("nombre", tietNombre.text.toString())
+                    putString("apellidos",tietApellidos.text.toString())
                     putString("fecha", tietNacimiento.text.toString())
-                    putString("numeroCuenta", tietNumCuenta.text.toString())
                     putString("correo", tietCorreo.text.toString())
+                    putString("numeroCuenta", tietNumCuenta.text.toString())
+                    putInt("carrera",spinnerPosition)
                 }
                 val intent = Intent(this@MainActivity, DetailsActivity::class.java)
                 intent.putExtras(parametros)

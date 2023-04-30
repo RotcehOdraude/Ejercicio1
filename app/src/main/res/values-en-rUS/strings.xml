@@ -17,13 +17,22 @@
     <string name="et_error_msg">Cannot remain empty</string>
     <string-array name="carreras">
         <item>SELECT AN OPTION</item>
-        <item>Computación</item>
-        <item>Electrica Electronica</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+        <item>Environmental Engineering</item>
+        <item>Biomedical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Computer Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Aerospace Engineering</item>
+        <item>Geophysical Engineering</item>
+        <item>Geological Engineering</item>
+        <item>Geomatics Engineering</item>
+        <item>Industrial Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Mechatronics Engineering</item>
+        <item>Mining Engineering</item>
+        <item>Petroleum Engineering</item>
+        <item>Telecommunications Engineering</item>
     </string-array>
+
     <string name="spinner_error_msg">Select a career</string>
 </resources>

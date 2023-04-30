@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:imeOptions="actionDone"
             android:inputType="text"
-            android:maxLength="10"
+            android:maxLength="20"
             android:maxLines="1">
 
         </com.google.android.material.textfield.TextInputEditText>
@@ -75,8 +75,7 @@
             android:imeOptions="actionDone"
             android:inputType="text"
             android:maxLength="20"
-            android:maxLines="1">
-        </com.google.android.material.textfield.TextInputEditText>
+            android:maxLines="1"></com.google.android.material.textfield.TextInputEditText>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -195,8 +194,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85">
-    </com.google.android.material.button.MaterialButton>
+        app:layout_constraintVertical_bias="0.85"></com.google.android.material.button.MaterialButton>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline8"
+        app:srcCompat="@drawable/ic_person" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
